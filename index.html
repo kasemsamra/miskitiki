@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="KasemSamra">
+  <title>Miskitiki</title>
+  <meta name="description"
+    content="Miskitiki is a currency exchange platform providing up-to-date exchange rates for various currencies including Gold, Silver, Bitcoin, and major currency pairs like USD/TRY, EUR/TRY, and more.">
+  <meta name="keywords"
+    content="currency exchange, exchange rates, forex, cryptocurrency, gold price, silver price, USD/TRY, EUR/TRY, BTC/USDT, USD/JPY, USD/GBP, USD/CHF, ETH/USDT, USD/CAD, USD/AUD, USD/CNY, USD/RUB, USD/SAR, USD/AED, market analysis">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/miskitikilogo180x180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/miskitikilogo180x180.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div id="loading-screen">
+      <h1>Miskitiki</h1>
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none;">
+    </div>
+
+   
+
+    <div class="containertop">
+      <h1 class="h1top">Miskitiki</h1>
+    </div>
+
+
+    <div class="divnav">
+      <nav>
+        <button class="navbutton">
+          <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#container">Convert</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </button>
+      </nav>
+    </div>
+
+    <div>
+      <table class="top">
+        <tr>
+          <td>
+            <iframe class="ptop"
+              src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22Gold%20Price%20in%20USD%20per%20Ounce%22%2C%22proName%22%3A%22OANDA%3AXAUUSD%22%7D%2C%7B%22description%22%3A%22Silver%20Price%20in%20USD%20per%20Ounce%22%2C%22proName%22%3A%22OANDA%3AXAGUSD%22%7D%2C%7B%22description%22%3A%22USD%2FTRY%22%2C%22proName%22%3A%22FX%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22EUR%2FTRY%22%2C%22proName%22%3A%22FX%3AEURTRY%22%7D%2C%7B%22description%22%3A%22BTC%2FUSDT%22%2C%22proName%22%3A%22BINANCE%3ABTCUSDT%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22OANDA%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22USD%2FGBP%22%2C%22proName%22%3A%22FX_IDC%3AUSDGBP%22%7D%2C%7B%22description%22%3A%22USD%2FCHF%22%2C%22proName%22%3A%22OANDA%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22ETH%2FUSDT%22%2C%22proName%22%3A%22BINANCE%3AETHUSDT%22%7D%2C%7B%22description%22%3A%22USD%2FCAD%22%2C%22proName%22%3A%22OANDA%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22USD%2FAUD%22%2C%22proName%22%3A%22FX_IDC%3AUSDAUD%22%7D%2C%7B%22description%22%3A%22USD%2FCNY%22%2C%22proName%22%3A%22FX_IDC%3AUSDCNY%22%7D%2C%7B%22description%22%3A%22USD%2FRUB%22%2C%22proName%22%3A%22FX_IDC%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22USD%2FSAR%22%2C%22proName%22%3A%22FX_IDC%3AUSDSAR%22%7D%2C%7B%22description%22%3A%22USD%2FAED%22%2C%22proName%22%3A%22SAXO%3AUSDAED%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Afalse%2C%22width%22%3A350%2C%22locale%22%3A%22en%22%7D"></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="h21">
+      <h2>
+        Miskitiki: A Platform for Live Currency Rates.</h2>
+    </div>
+    <div>
+      <table class="tmain">
+        <tr>
+          <td id="gold">
+            <div>
+              <span>Gold Price in USD per Ounce</span>
+            </div>
+            <iframe class="gold" id="tradingview_789012" name="tradingview_789012"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=OANDA%3AXAUUSD&amp;width=350&amp;colorTheme=dark&amp;isTransparent=true&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>Silver Price in USD per Ounce</span>
+            </div>
+            <iframe class="silver" id="tradingview_123456" name="tradingview_123456"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=OANDA%3AXAGUSD&amp;width=350&amp;colorTheme=dark&amp;isTransparent=true&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/TRY Exchange Rate </span>
+            </div>
+            <iframe class="try" id="tradingview_789017" name="tradingview_789017"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX%3AUSDTRY&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+      </table>
+    </div>
+
+
+    <div class="buttoncontainer" id="buttonContainer">
+      <button class="show-rates-button" onclick="showRates()">Show more currency</button>
+    </div>
+
+    <div id="exchangeRatesContainer" style="display: none;">
+      <table class="ttmain">
+        <tr>
+          <td>
+            <div>
+              <span>EUR/TRY Exchange Rate</span>
+            </div>
+            <iframe class="euro" id="tradingview_789018" name="tradingview_789018"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=OANDA%3AEURTRY&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>BTC/USDT Exchange Rate</span>
+            </div>
+            <iframe class="btc" id="tradingview_789218" name="tradingview_789018"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=BINANCE%3ABTCUSDT&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/JPY Exchange Rate</span>
+            </div>
+            <iframe class="jpy" id="tradingview_789019" name="tradingview_789019"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX%3AUSDJPY&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+        <tr>
+          <td>
+            <div>
+              <span>USD/GBP Exchange Rate</span>
+            </div>
+            <iframe class="gbp" id="tradingview_789020" name="tradingview_789020"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX_IDC%3AUSDGBP&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/CHF Exchange Rate</span>
+            </div>
+            <iframe class="chf" id="tradingview_789021" name="tradingview_789021"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=OANDA%3AUSDCHF&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+
+              <span>ETH/USDT Exchange Rate</span>
+            </div>
+            <iframe class="eth" id="tradingview_789022" name="tradingview_789022"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=BINANCE%3AETHUSD&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+        <tr>
+          <td>
+            <div>
+              <span>USD/CAD Exchange Rate</span>
+            </div>
+            <iframe class="cad" id="tradingview_789023" name="tradingview_789023"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=OANDA%3AUSDCAD&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/AUD Exchange Rate</span>
+            </div>
+            <iframe class="aud" id="tradingview_789024" name="tradingview_789024"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=SAXO%3AUSDAUD&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/CNY Exchange Rate</span>
+            </div>
+            <iframe class="cny" id="tradingview_789025" name="tradingview_789025"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX_IDC%3AUSDCNY&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en">
+            </iframe>
+          </td>
+        <tr>
+          <td>
+            <div>
+              <span>USD/RUB Exchange Rate</span>
+            </div>
+            <iframe class="rub" id="tradingview_789026" name="tradingview_789026"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX_IDC%3AUSDRUB&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en">
+            </iframe>
+          </td>
+          <td>
+            <div>
+              <span>USD/SAR Exchange Rate</span>
+            </div>
+            <iframe class="sar" id="tradingview_789027" name="tradingview_789027"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=FX_IDC%3AUSDSAR&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+          <td>
+            <div><span>USD/AED Exchange Rate</span></div>
+            <iframe class="aed" id="tradingview_789028" name="tradingview_789028"
+              src="https://s.tradingview.com/embed-widget/single-quote/?symbol=SAXO%3AUSDAED&amp;width=350&amp;colorTheme=dark&amp;isTransparent=false&amp;locale=en"></iframe>
+          </td>
+        </tr>
+        </tr>
+        </tr>
+        </tr>
+        </tr>
+      </table>
+      <div class="buttoncontainer" id="buttonContainer">
+        <button class="hide-rates-button" onclick="hideRates()">Hide currency</button>
+      </div>
+    </div>
+
+
+    <div class="calculatorform" id="container">
+
+      <form id="currencyConverterForm">
+        <div class="container">
+          <h1 class="Converter">Converter</h1>
+          <div>
+            <label class="cuform" for="currencyFrom">From:</label>
+            <select id="currencyFrom" name="currencyFrom">
+              <option value="USD">USD</option>
+              <option value="TRY">TÜRK LIRASI</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">Japanese yen</option>
+              <option value="GBP">British Pound</option>
+              <option value="CHF">Swiss Franc</option>
+              <option value="CAD">Canadian Dollar</option>
+              <option value="AUD">Australian Dollar</option>
+              <option value="CNY">Chinese Yuan</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="SAR">Saudi Riyal</option>
+              <option value="AED">United Arab Emirates Dirham</option>
+
+
+            </select>
+          </div>
+          <div>
+            <label class="cuto" for="currencyTo">To:</label>
+            <select id="currencyTo" name="currencyTo">
+              <option value="TRY">TÜRK LIRASI</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">Japanese yen</option>
+              <option value="GBP">British Pound</option>
+              <option value="CHF">Swiss Franc</option>
+              <option value="CAD">Canadian Dollar</option>
+              <option value="AUD">Australian Dollar</option>
+              <option value="CNY">Chinese Yuan</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="SAR">Saudi Riyal</option>
+              <option value="AED">United Arab Emirates Dirham</option>
+
+            </select>
+          </div>
+          <div>
+            <label class="Amount" for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+          </div>
+          <button class="buam" type="button" onclick="convertCurrency()">Convert</button>
+          <div id="result"></div>
+        </div>
+      </form>
+    </div>
+
+    <hr class="hrchart">
+
+    <h3 class="h3">Please select the currency of interest to view its corresponding chart from here.</h3>
+
+    <div class="selectbox">
+      <label class="charts" for="chartss">Select a chart:</label>
+      <select id="chartss" name="chartTo" onchange="showChart(this.value)">
+        <option value="chart1">Gold Price in USD per Ounce</option>
+        <option value="chart2">Silver Price in USD per Ounce</option>
+        <option value="chart3">USD/TRY Chart</option>
+        <option value="chart4">EUR/TRY Chart</option>
+        <option value="chart5">BTC/USDT Chart</option>
+        <option value="chart6">USD/JPY Chart</option>
+        <option value="chart7">USD/GBP Chart</option>
+        <option value="chart8">USD/CHF Chart</option>
+        <option value="chart9">ETH/USDT Chart</option>
+        <option value="chart10">USD/CAD Chart</option>
+        <option value="chart11">USD/AUD Chart</option>
+        <option value="chart12">USD/CNY Chart</option>
+        <option value="chart13">USD/RUB Chart</option>
+        <option value="chart14">USD/SAR Chart</option>
+        <option value="chart15">USD/AED Chart</option>
+      </select>
+    </div>
+
+
+    <div class="chart">
+      <div id="chart1">
+        <p>Gold Price in USD per Ounce</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AXAUUSD%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart2">
+        <p>Silver Price in USD per Ounce</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AXAGUSD%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0" scrolling="no">
+        </iframe>
+      </div>
+      <div id="chart3">
+        <p>USD/TRY Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AUSDTRY%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart4">
+        <p>EUR/TRY Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AEURTRY%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart5">
+        <p>BTC/USDT Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22BINANCE%3ABTCUSD%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart6">
+        <p>USD/JPY Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AUSDJPY%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart7">
+        <p>USD/GBP Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22FX_IDC%3AUSDGBP%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart8">
+        <p>USD/CHF Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AUSDCHF%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart9">
+        <p>ETH/USDT Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22BINANCE%3AETHUSDT%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart10">
+        <p>USD/CAD Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22OANDA%3AUSDCAD%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart11">
+        <p>USD/AUD Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22FX_IDC%3AUSDAUD%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart12">
+        <p>USD/CNY Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22FX_IDC%3AUSDCNY%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart13">
+        <p>USD/RUB Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22FX_IDC%3AUSDRUB%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+      <div id="chart14">
+        <p>USD/SAR Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22FX_IDC%3AUSDSAR%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+
+      <div id="chart15">
+        <p>USD/AED Chart</p>
+        <iframe
+          src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#%7B%22symbols%22%3A%5B%5B%22SAXO%3AUSDAED%7C1D%22%5D%5D%2C%22chartOnly%22%3Afalse%2C%22width%22%3A550%2C%22height%22%3A400%2C%22locale%22%3A%22en%22%2C%22colorTheme%22%3A%22dark%22%2C%22autosize%22%3Afalse%2C%22showVolume%22%3Afalse%2C%22showMA%22%3Afalse%2C%22hideDateRanges%22%3Afalse%2C%22hideMarketStatus%22%3Afalse%2C%22hideSymbolLogo%22%3Afalse%2C%22scalePosition%22%3A%22right%22%2C%22scaleMode%22%3A%22Normal%22%2C%22fontFamily%22%3A%22-apple-system%2C%20BlinkMacSystemFont%2C%20Trebuchet%20MS%2C%20Roboto%2C%20Ubuntu%2C%20sans-serif%22%2C%22fontSize%22%3A%2210%22%2C%22noTimeScale%22%3Afalse%2C%22valuesTracking%22%3A%221%22%2C%22changeMode%22%3A%22price-and-percent%22%2C%22chartType%22%3A%22area%22%2C%22maLineColor%22%3A%22%232962FF%22%2C%22maLineWidth%22%3A1%2C%22maLength%22%3A9%2C%22lineWidth%22%3A2%2C%22lineType%22%3A0%2C%22dateRanges%22%3A%5B%221d%7C1%22%2C%221m%7C30%22%2C%223m%7C60%22%2C%2212m%7C1D%22%2C%2260m%7C1W%22%2C%22all%7C1M%22%5D%7D"
+          style="width: 100%; height: 400px; border: none;" allowtransparency="true" frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+    </div>
+
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+      <i class="scroll-To-TopBtn"></i>
+    </button>
+
+
+
+  </main>
+
+  <footer>
+    <table class="top">
+      <tr>
+        <td>
+          <iframe class="ptop"
+            src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22Gold%20Price%20in%20USD%20per%20Ounce%22%2C%22proName%22%3A%22OANDA%3AXAUUSD%22%7D%2C%7B%22description%22%3A%22Silver%20Price%20in%20USD%20per%20Ounce%22%2C%22proName%22%3A%22OANDA%3AXAGUSD%22%7D%2C%7B%22description%22%3A%22USD%2FTRY%22%2C%22proName%22%3A%22FX%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22EUR%2FTRY%22%2C%22proName%22%3A%22FX%3AEURTRY%22%7D%2C%7B%22description%22%3A%22BTC%2FUSDT%22%2C%22proName%22%3A%22BINANCE%3ABTCUSDT%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22OANDA%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22USD%2FGBP%22%2C%22proName%22%3A%22FX_IDC%3AUSDGBP%22%7D%2C%7B%22description%22%3A%22USD%2FCHF%22%2C%22proName%22%3A%22OANDA%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22ETH%2FUSDT%22%2C%22proName%22%3A%22BINANCE%3AETHUSDT%22%7D%2C%7B%22description%22%3A%22USD%2FCAD%22%2C%22proName%22%3A%22OANDA%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22USD%2FAUD%22%2C%22proName%22%3A%22FX_IDC%3AUSDAUD%22%7D%2C%7B%22description%22%3A%22USD%2FCNY%22%2C%22proName%22%3A%22FX_IDC%3AUSDCNY%22%7D%2C%7B%22description%22%3A%22USD%2FRUB%22%2C%22proName%22%3A%22FX_IDC%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22USD%2FSAR%22%2C%22proName%22%3A%22FX_IDC%3AUSDSAR%22%7D%2C%7B%22description%22%3A%22USD%2FAED%22%2C%22proName%22%3A%22SAXO%3AUSDAED%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Afalse%2C%22width%22%3A350%2C%22locale%22%3A%22en%22%7D"></iframe>
+        </td>
+      </tr>
+    </table>
+
+    <div class="fo1">
+      <p class="fo2">All rights reserved. The content available on this website is protected by copyright and
+        intellectual
+        property laws.</p>
+    </div>
+    <idv class="fo1">
+      <p class="fo4">© 2024 MISKITIKI Currency Exchange Rate Website</p>
+    </idv>
+    <div class="fo1">
+      <p class="fo3">
+        It is prohibited to copy, distribute, transfer, store, use, modify, or reproduce any part of this
+        website without
+        prior written permission from the Musketeeki website administration.</p>
+    </div>
+
+    <div class="footnavbardiv">
+      <button class="footnavbarbutton" id="aboutUsButton">About US</button>
+      <button class="footnavbarbutton" id="socialMediaButton">Social Media</button>
+      <button class="footnavbarbutton" id="privacyPolicyButton">Privacy Policy</button>
+    </div>
+
+    <div id="aboutUsPopup" class="popupMenu">
+      <span class="closeButton">&times;</span>
+      <p>Welcome to Miskitiki, your reliable partner in the world of currency. Our mission is to provide you with the
+        most accurate, up-to-date, and user-friendly currency information.</p>
+      <p>At Miskitiki, we understand the importance of financial planning and the role currency plays in it. Whether
+        you’re a traveler, an international business person, or just curious about world currencies, we’ve got you
+        covered.</p>
+      <p>Our team is dedicated to gathering and providing the most accurate currency data from around the globe. We
+        strive to ensure that our information is reliable and updated in real time, so you can make informed decisions.
+      </p>
+      <p>We believe in making currency information accessible and understandable for everyone. Our user-friendly
+        interface is designed to help you navigate the complex world of currency with ease.</p>
+      <p>Thank you for choosing Miskitiki. We look forward to serving your currency needs.</p>
+    </div>
+
+    <div id="socialMediaPopup" class="popupMenu">
+      <span class="closeButton">&times;</span>
+      <div>
+        <img src="img/instagram.png" alt="instagram" class="contactimg" id="instagram" title="instagram" ></div>
+       <div> <img src="img/facebook.png" alt="facebook" class="contactimg" id="facebook" title="facebook"></div>
+        <div> <img src="img/twitter.png" alt="twitter" class="contactimg" id="twitter" title="twitter">   </div>         
+    </div>
+    </div>
+
+    <div id="privacyPolicyPopup" class="popupMenu">
+      <span class="closeButton">&times;</span>
+      <p><b>Privacy Policy</b></p>
+      <p>At Miskitiki, we respect your privacy and are committed to protecting it. This Privacy Policy outlines our
+        practices regarding the collection, use, and disclosure of your information.</p>
+      <nav>
+        <li>Information Collection: We collect information you provide directly to us when you use our services. This
+          may include personal information such as your name, email address, and other contact information. We also
+          collect information about your transactions and your activities on our website.</li>
+        <li>Use of Information: We use the information we collect to provide, maintain, and improve our services. We may
+          also use this information to communicate with you, respond to your inquiries, and for other customer service
+          purposes.</li>
+       
+    </div>
+
+
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/contactEffect.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/scriptt.js"></script>
+  <script src="js/scrolling.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>
